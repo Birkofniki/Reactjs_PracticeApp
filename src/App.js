@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+// import logo from './logo.svg';.. These are not needed, were create by react DOM
+// import './App.css';
+import FunctionalComp from './Components/FunctionalComp';
+import {ClassComp1, ClassComp2} from "./Components/ClassComp";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+      <h1>Hello! Welcome to Augastino's work </h1>
+      <h1>This is about React Components</h1>
+      <FunctionalComp></FunctionalComp>
+      <ClassComp1 /> {/* self closing tag, also to comment we use braces first*/}
+      <ClassComp2 />
+      </div>
   );
-}
+} // The component names can be container tags e.g (<FunctionalComp></FunctionalComp>), or self-closing, e.g  <FunctionalComp /> ......
 
 export default App;
