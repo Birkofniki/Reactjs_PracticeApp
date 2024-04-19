@@ -3,6 +3,7 @@ import React from "react"
 // import './App.css';
 import FunctionalComp from './Components/FunctionalComp';
 import {ClassComp1, ClassComp2} from "./Components/ClassComp";
+import ClickComp from "./Components/ClickComp";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <FunctionalComp></FunctionalComp>
       <ClassComp1 /> {/* self closing tag, also to comment we use braces first*/}
       <ClassComp2 />
+      <ClickComp />
       </div>
   );
 } // The component names can be container tags e.g (<FunctionalComp></FunctionalComp>), or self-closing, e.g  <FunctionalComp /> ......
