@@ -4,6 +4,7 @@ import React from "react"
 import FunctionalComp from './Components/FunctionalComp';
 import {ClassComp1, ClassComp2} from "./Components/ClassComp";
 import ClickComp from "./Components/ClickComp";
+import CounterComp from "./Components/CounterComp";
 
 function App() {
   return (
@@ -14,6 +15,8 @@ function App() {
       <ClassComp1 /> {/* self closing tag, also to comment we use braces first*/}
       <ClassComp2 />
       <ClickComp />
+
+      <CounterComp></CounterComp>
       </div>
   );
 } // The component names can be container tags e.g (<FunctionalComp></FunctionalComp>), or self-closing, e.g  <FunctionalComp /> ......
