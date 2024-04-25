@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import UpdatedComp from './HighOrderComp';
 
 export class CounterComp extends Component {
     constructor(props){
@@ -16,10 +17,12 @@ export class CounterComp extends Component {
         const {count} = this.state;
         return (
             <div>
-                <button onMouseEnter={this.IncrementCount}> Incremented to {count} </button>
+                <button onMouseEnter={this.IncrementCount}>
+                    {this.props.name} hovered the mouse for {count} times
+                </button>
             </div>
         );
     }
 }
 
-export default CounterComp;
+export default UpdatedComp(CounterComp);

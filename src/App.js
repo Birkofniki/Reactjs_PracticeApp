@@ -5,6 +5,7 @@ import FunctionalComp from './Components/FunctionalComp';
 import {ClassComp1, ClassComp2} from "./Components/ClassComp";
 import ClickComp from "./Components/ClickComp";
 import CounterComp from "./Components/CounterComp";
+import ParentComparerComp from "./Components/ParentComparerComp";
 
 function App() {
   return (
@@ -16,7 +17,8 @@ function App() {
       <ClassComp2 />
       <ClickComp />
 
-      <CounterComp></CounterComp>
+      <CounterComp />
+      <ParentComparerComp />
       </div>
   );
 } // The component names can be container tags e.g (<FunctionalComp></FunctionalComp>), or self-closing, e.g  <FunctionalComp /> ......
