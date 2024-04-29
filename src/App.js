@@ -13,10 +13,10 @@ function App() {
       <h1>Hello! Welcome to Augastino's work </h1>
       <h1>This is about React Components</h1>
       <FunctionalComp></FunctionalComp>
-      <ClassComp1 /> {/* self closing tag, also to comment we use braces first*/}
+      <ClassComp1 /> {/* self closing tag, ALSO to comment we use curly braces first*/}
       <ClassComp2 />
       <ClickComp />
-
+      
       <CounterComp />
       <ParentComparerComp />
       </div>
